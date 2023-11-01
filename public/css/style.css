@@ -42,6 +42,10 @@ a:visited{
     color: aqua;
 }
 
-p,ul{
+p{
+    font-size: 25px;
+}
+
+ul{
     font-size: 25px;
 }
