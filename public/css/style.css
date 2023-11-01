@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
 body {
-    font-family: "Arial", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     background: rgb(20, 20, 20);
     color: #ffffff;
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 35px;
 }
 
 .profile-picture-area{
@@ -40,10 +42,6 @@ a:visited{
     color: aqua;
 }
 
-p{
-    font-size: 1.3rem;
-}
-
-ul{
-    font-size: 1.3rem;
+p,ul{
+    font-size: 25px;
 }
