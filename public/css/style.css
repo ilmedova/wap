@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background: rgb(20, 20, 20);
+    color: #ffffff;
+}
+
+h1{
+    font-size: 35px;
+}
+
+.profile-picture-area{
+    width: 20%;
+}
+
+.profile-picture-area img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container{
+    width: 96%;
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card{
+    background: rgb(24 24 24);
+    padding: 20px;
+}
+
+a{
+    color: aquamarine;
+}
+
+a:visited{
+    color: aqua;
+}
+
+p,ul{
+    font-size: 25px;
+}
