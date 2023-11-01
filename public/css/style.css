@@ -10,6 +10,18 @@ h1{
     font-size: 35px;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p::first-letter{
+    font-size: 37.5px;
+}
+
 .profile-picture-area{
     width: 20%;
 }
@@ -44,4 +56,18 @@ a:visited{
 
 p,ul{
     font-size: 25px;
+}
+
+.movie-content-block{
+    display: grid;
+}
+
+.span-key{
+    color: yellow;
+    font-size: 20px;
+}
+
+.span-value{
+    font-size: 20px;
+    margin-left: 20px;
 }
