@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+*{
+    font-family: "Josefin Sans";
+}
+header{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #000000;
+}
+header div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.logo{
+    width: 50px;
+}
+.logo>img{
+    width: 100%;
+}
+.container{
+    width: 96%;
+}
+table{
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+table svg{
+    width: 25px;
+}
+table td, table th{
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #000;
+}
+.main-content{
+    width: 95%;
+    margin: auto;
+}
+.quantity-td input{
+    width: 30px
+}
+.place-order-button{
+    border: none;
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: mediumslateblue;
+    color: #fff;
+    float: right;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.logout > button{
+    border: none;
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: grey;
+    color: #fff;
+    float: right;
+}

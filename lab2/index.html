@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616456.png" alt="adidas logo">
+            </div>
+            <div class="greeting">
+                <h3>Hello Mahri!</h3>
+            </div>
+            <div class="logout">
+                <button>Logout</button>
+            </div>
+        </header>
+        <section class="main-content">
+            <h1>Product list</h1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stack</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>NodeJS</td>
+                    <td>9.99</td>
+                    <td>8</td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>19.99</td>
+                    <td>5</td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Angular</td>
+                    <td>29.99</td>
+                    <td>13</td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                        </svg>
+                    </td>
+                </tr>
+            </table>
+            <h1>Shopping Cart</h1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>NodeJS</td>
+                    <td>9.99</td>
+                    <td>8</td>
+                    <td class="quantity-td">
+                        <button>-</button>
+                        <input type="number" name="" id="">
+                        <button>+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>19.99</td>
+                    <td>5</td>
+                    <td class="quantity-td">
+                        <button>-</button>
+                        <input type="number" name="" id="">
+                        <button>+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Angular</td>
+                    <td>29.99</td>
+                    <td>13</td>
+                    <td class="quantity-td">
+                        <button>-</button>
+                        <input type="number" name="" id="">
+                        <button>+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align: right;">
+                        <b>Total: 300.98</b>
+                    </td>
+                </tr>
+            </table>
+            <button class="place-order-button mt-20">Place Order</button>
+        </section>
+        <footer></footer>
+    </div>
+</body>
+</html>
