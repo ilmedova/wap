@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3 - Form page</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="main-content">
+            <form action="#">
+                <div class="form-header">
+                    <h3>
+                        Workshop Registration
+                    </h3>
+                    <button type="button" class="dropdown-button row">
+                        More actions 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Some option 1</a></li>
+                        <li><a href="#">Some option 2</a></li>
+                        <li><a href="#">Some option 3</a></li>
+                    </ul>
+                </div>
+                <div class="form-body">
+                    <div class="row form-block w-full">
+                        <h4><a href="#">Register now while seats are available!</a></h4>
+                    </div>
+                    <div class="row w-full space-between">
+                        <div class="form-block w-half">
+                            <div class="row space-between w-full">
+                                <label for="name">Firstname <span class="text-danger">*</span></label>
+                                <input name="name" id="name" type="text" required>
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <label for="lastname">Lastname <span class="text-danger">*</span></label>
+                                <input name="lastname" id="lastname" type="text" required>
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <label for="company">Company/Institution <span class="text-danger">*</span></label>
+                                <input name="company" id="company" type="text" required>
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <label for="address">Address <span class="text-danger">*</span></label>
+                                <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <label for="city">City</label>
+                                <input name="city" id="city" type="text">
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <label for="state">State/Province/Region</label>
+                                <select name="state" id="state">
+                                    <option value="-" selected disabled>-Select-</option>
+                                    <option value="IL">ILLINOIS</option>
+                                    <option value="IA">IOWA</option>
+                                </select>
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <label for="country">Country</label>
+                                <select name="country" id="country">
+                                    <option value="-" selected disabled>-Select-</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="USA">united States of America</option>
+                                </select>
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <label for="email">Email <span class="text-danger">*</span></label>
+                                <input name="email" id="email" type="email" required>
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <label for="phone">Phone Number <span class="text-danger">*</span></label>
+                                <input name="phone" id="phone" type="text" required>
+                            </div>
+                        </div>
+                        <div class="form-block w-half">
+                            <div class="row space-between w-full">
+                                <span class="form-section-title">Lunch</span>
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <label for="meal">Meal Preference</label>
+                                <select name="meal" id="meal">
+                                    <option value="veg" selected>Vegeterian</option>
+                                    <option value="non-veg">Non-Vegeterian</option>
+                                </select>
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <span class="form-section-title">Payment Details</span>
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <div class="w-half">
+                                    <span style="font-weight: 700;">Payment Mode</span>
+                                </div>
+                                <div class="w-half">
+                                    <div class="row w-full">
+                                        <input name="cash" id="cash" style="width: auto;" type="checkbox"> <label for="cash" style="font-weight: 400;">Cash</label>
+                                    </div>
+                                    <div class="row w-full">
+                                        <input name="check" id="check" style="width: auto;" type="checkbox"> <label for="check" style="font-weight: 400;">Check</label>
+                                    </div>
+                                    <div class="row w-full">
+                                        <input name="draft" id="draft" style="width: auto;" type="checkbox"> <label for="draft" style="font-weight: 400;">Demad draft</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <label for="ddcheck">DD/Check No.</label>
+                                <input name="ddcheck" id="ddcheck" type="text">
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <label for="bank">Drawn on (Bank Name)</label>
+                                <input name="bank" id="bank" type="text">
+                            </div>
+                            <div class="row space-between w-full mt-30">
+                                <label for="payable_at">Payable at</label>
+                                <input name="payable_at" id="payable_at" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="form-footer">
+                    <div class="text-center">
+                        <button class="form-button" type="submit">Submit</button>
+                        <button class="form-button" type="reset">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div style="margin-top: 15px">
+            <a href="#" >
+                <img src="./public/img/css_checker.png" alt="css_checker" style="width: 30%;">
+            </a>
+            <a href="#" >
+                <img src="./public/img/htmlchecker.png" alt="html_checker" style="width: 30%;">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
