@@ -117,3 +117,8 @@ form .form-body{
     font-weight: 700;
     color: #fff;
 }
+
+footer div{
+    margin-top: 15px; 
+    text-align: center;
+}
