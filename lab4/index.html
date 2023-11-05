@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4 - Intro to JS</title>
+</head>
+<body>
+    <p>Please open console in your browser</p>
+    <script type="module">
+        import {sum, getNewArray, concat} from "./src/utils/main.js";
+
+        //1
+        console.log("Exercise 1:\n" + sum([1,2,3]));
+        console.log("===================================");
+
+        //2
+        console.log("Exercise 2:\n" + getNewArray(["apple", "banana", "cherry", "kiwi", "grape", "avocado"]));
+        console.log("===================================");
+
+        //3
+        console.log("Exercise 3:\n" + concat('one', [1, 2, 3], ['two', 'three']));
+        console.log("===================================");
+    </script>
+</body>
+</html>
