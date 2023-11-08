@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5 - execution context</title>
+</head>
+<body>
+    <main style="display: flex; justify-content:space-evenly">
+
+        <!-- exercise 1 -->
+        <div style="width: 40%;">
+            <p>Answer 1: <br>
+                undefined 30 <br>
+                10 30 <br><br>
+            </p>
+            <img src="./public/img/1.png" alt="lab5-ex1">
+        </div>
+        
+
+        <!-- exercise 2 -->
+        <div style="width: 40%;">
+            <p>Answer 2: <br>
+                3 undefined <br>
+                10 undefined <br>
+                10
+            </p>
+            <img src="./public/img/2.png" alt="lab5-ex2">
+        </div>
+        
+
+        <!-- exercise 2 -->
+        <div style="width: 20%;">
+            <p>Exercise 3 in console</p>
+        </div>
+        <!-- exercise 3 -->
+        <script>
+            function fromTo(from, to){
+                const timerId = setInterval(() => {
+                    if(from > to){
+                        clearInterval(timerId);
+                    } else {
+                        console.log(from++);
+                    }
+                }, 1000);   
+            }
+
+            fromTo(4, 8);
+        </script>
+
+    </main>
+    
+</body>
+</html>
