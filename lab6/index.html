@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- q1 -->
+    <script>
+        //1st=========================================================
+        let group = {
+            title: "Our Group",
+            students: ["John", "Pete", "Alice"],
+        //     showList: function () {
+        //         this.students.forEach(student => {
+        //                 console.log(this.title + ": " + student
+        //             );
+        //         });
+        //     }
+        
+        //     2nd=========================================================
+        //     showList: function () {
+        //         this.students.forEach(function(student){
+        //             console.log(this.title + ": " + student);
+        //         }.bind(this)
+        //     );}
+
+        //     3rd========================================================
+        //     showList: function () {
+        //         const self = this;
+        //         this.students.forEach(function(student){
+        //             console.log(self.title + ": " + student);
+        //         }
+        //     );}
+
+        //     4th ==========================================================
+        //     showList: function () {
+        //         this.students.forEach(student => {
+        //             (function(){
+        //                 console.log(this.title + ": " + student);
+        //             }).call(this);
+        //         }
+        //     );}
+
+        //     5th ==========================================================
+            showList: function () {
+                this.students.forEach(student => {
+                    (function(){
+                        console.log(this.title + ": " + student);
+                    }).apply(this);
+                }
+            );}
+        };
+
+        group.showList();
+    </script>
+
+    <!-- q2 -->
+    <script>
+        let i = 0;
+
+        setTimeout(() => console.log(i), 100); 
+
+        for (let j = 0; j < 100000000; j++) {
+            i++;
+        }
+    </script>
+</body>
+</html>
