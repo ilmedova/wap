@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="number" name="username" size="4" maxlength="8"/>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        // var a = [
+        //     "Hydrogen",
+        //     "Helium",
+        //     "Lithium",
+        //     "Beryllium"
+        // ];
+        // var a2 = a.map(function(s) { return s.length });
+        // console.log("a2: " + a2);
+        const students = [
+            { name: "Quincy", grades: [80, 90], courses: ["cs301", "cs303"] },
+            { name: "Jason", grades: [80, 100], courses: ["cs301", "cs303"] },
+            { name: "Alexis", grades: [100, 90], courses: ["cs301", "cs303"] },
+            { name: "Sam", grades: [100, 100], courses: ["cs301", "cs303"] },
+        ];
+
+        var a = students.filter(stu => stu.courses.includes("cs303")).reduce((accum, stu) => {
+            accum[stu.name] = stu.grades.reduce((acc, grade) => acc + grade, 0)/stu.grades.length;
+            return accum;
+        }, {});
+
+        console.log(a);
+
+    </script>
+</body>
+</html>
