@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div::first-letter{
+            font-size: 22px;
+            font-weight: 900;
+        }
+        div.card{
+            margin: 1vw;
+            padding: 1vw;
+            background: #eee;
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/616/616456.png" type="image/x-icon">
+</head>
+<body>
+    <div class="card">
+        <h3>1</h3>
+        In Node.js, there are two main types of callback queues: the "macro-task" queue and the "micro-task" queue. 
+        These queues are part of the event loop mechanism in Node.js, and they handle asynchronous operations.
+
+        <dl>
+
+            <dt>Macro-task Queue (Callback Queue):</dt>
+            <dd>
+                This queue is sometimes referred to as the "callback queue" or the "task queue."
+                It handles the execution of callback functions associated with I/O operations, timers, and other events.
+                Examples of tasks that go into the macro-task queue include I/O operations (reading from or writing to the file system), timers (setTimeout, setInterval), and network requests.
+                The event loop picks tasks from this queue and executes them in the order they were added.
+            </dd>
+
+            <dt>Micro-task Queue (Job Queue):</dt>
+            <dd>
+                This queue is responsible for handling smaller, fine-grained tasks that need to be executed after the current operation but before the next event loop cycle.
+                Promises and certain APIs, like process.nextTick and queueMicrotask, add tasks to the micro-task queue.
+                Micro-tasks are executed after the current macro-task but before the next one. This means they have higher priority than macro-tasks.
+            </dd>
+
+        </dl>
+    </div>
+
+    <div class="card">
+        <h3>2</h3>
+        start <br>
+        end<br>
+        nextTick 1<br>
+        nextTick 2<br>
+        Promise...1<br>
+        Promise...2<br>
+        timeout 1<br>
+        timeout 2<br>
+        nextTick 3<br>
+        timeout 3<br>
+    </div>
+
+    <div class="card">
+        <h3>3</h3>
+        Immediate <br>
+        timeout <br>
+        readFile.... <br>
+    </div>
+
+    <div class="card">
+        <h3>4</h3>
+        undefined
+    </div>
+
+    <div class="card">
+        <h3>5</h3>
+        Output: TypeError: getName is not a function; <br>
+        Reason: Because the getName inside the app.js is an object, not function. module.exports is by default object. We can call it using getName.getName() instead of getName(); <br>
+    </div>
+
+    <div class="card">
+        <h3>6</h3>
+        Output: Josh Edwards <br>
+        Reason: Because module.exports is equal to function as we assign function, that's why we can call it directly. Otherwise if we don't asssign it to module.exports it is going to be object
+    </div>
+
+    <div class="card">
+        <h3>7</h3>
+        Output: Error because we require pattern2.js but we don't have it, we have pattern1.js <br>
+    </div>
+
+    <div class="card">
+        <h3>8</h3>
+        Output: { firstname: 'John', lastname: 'Smith' } <br>
+        <ul>
+            <li>Initially, exports and module.exports are set to the same object (module.exports).</li>
+            <li>The firstname property is added to exports (which points to module.exports).</li>
+            <li>The lastname property is added directly to module.exports.</li>
+            <li>exports is reassigned to a new object with a getFullName method.</li>
+            <li>The final value returned and stored in result is module.exports.</li>
+            <li>The console.log outputs { firstname: 'John', lastname: 'Smith' }, which represents the final state of module.exports.</li>
+        </ul>
+    </div>
+</body>
+</html>
