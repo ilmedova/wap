@@ -1,0 +1,14 @@
+body.index{
+    background: orange;
+    color: #fff
+}
+
+body.users{
+    background: blue;
+    color: #fff
+}
+
+body.products{
+    background: lime;
+    color: #fff
+}

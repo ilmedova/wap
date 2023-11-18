@@ -1,0 +1,17 @@
+{
+  "name": "lab11",
+  "version": "1.0.0",
+  "description": "lab11",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "lab11"
+  ],
+  "author": "mahri ilmedova",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
