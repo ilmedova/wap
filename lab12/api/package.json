@@ -1,0 +1,14 @@
+{
+  "name": "lab12",
+  "version": "1.0.0",
+  "description": "lab12 rest",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "mahri ilmedova",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
