@@ -1,0 +1,33 @@
+GET http://localhost:3000/book
+
+###
+
+GET http://localhost:3000/book/2
+
+###
+
+POST http://localhost:3000/book
+Content-Type: application/json
+
+{
+    "title": "Mahri in USA",
+    "ISBN": "3",
+    "publishedDate": "1750-01-01",
+    "author": "Mahri Ilmedova"
+}
+
+###
+
+PUT http://localhost:3000/book/2
+Content-Type: application/json
+
+{
+    "title": "Pride and Prejudice: Vampires",
+    "ISBN": 2,
+    "publishedDate": "1750-01-01",
+    "author": "Jane Austen"
+}
+
+###
+
+DELETE http://localhost:3000/book/3
